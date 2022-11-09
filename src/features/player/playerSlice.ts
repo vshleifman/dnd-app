@@ -19,9 +19,9 @@ export interface PlayerState {
 const initialState: PlayerState = {
   class: undefined,
   race: undefined,
-  maxHitPoints: 0,
-  currentHitPoints: 0,
-  tempHitPoints: 0,
+  maxHitPoints: 100,
+  currentHitPoints: 50,
+  tempHitPoints: 5,
   abilityScores: {
     scores: {
       STR: 0,
@@ -40,7 +40,10 @@ const initialState: PlayerState = {
   //   buffs: new Map(),
   //   debuffs: new Map(),
   // },
-  spellSlots: {},
+  spellSlots: {
+    1: { max: 2, current: 2 },
+    2: { max: 1, current: 1 },
+  },
 };
 
 export const playerSlice = createSlice({

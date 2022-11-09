@@ -33,19 +33,18 @@ const LevelCounter = () => {
   }
 
   return (
-    <div className="grid grid-rows-1 grid-cols-1 m-4 max-w-fit">
+    <div className="grid grid-rows-1 grid-cols-1 max-w-fit">
       <button
         disabled={isDisabled.current}
         onMouseDown={startCounter}
         onMouseUp={stopCounter}
         className={`
-        rounded-full
+        
         w-20 h-20 p-4
         text-center text-4xl font-extrabold 
         drop-shadow-lg 
          bg-indigo-300
          text-amber-400
-           outline outline-pink-800
           transition-all
           row-start-1 col-start-1
          ${limitIsReached ? 'border-4 border-yellow-400' : 'border-2 border-black'}
@@ -57,7 +56,7 @@ const LevelCounter = () => {
         {player.level}
       </button>
       <div
-        className={`rounded-full h-[76px] bg-red-200 place-self-center row-start-1 col-start-1 opacity-60 pointer-events-none`}
+        className={` h-[76px] bg-red-200 place-self-center row-start-1 col-start-1 opacity-60 pointer-events-none`}
         style={{ height: `${counter}px`, width: `${counter}px` }}
       ></div>
     </div>

@@ -19,8 +19,7 @@
     "paths": {
       "@config": ["src/config"],
       "@utils": ["src/utils"],
-      "@types": ["src/types"],
-      "store": ["src/store/*"]
+      "@types": ["src/types"]
     }
   },
   "include": ["src"],
