@@ -41,8 +41,15 @@ const initialState: PlayerState = {
   //   debuffs: new Map(),
   // },
   spellSlots: {
-    1: { max: 2, current: 2 },
-    2: { max: 1, current: 1 },
+    1: { max: 4, current: 4 },
+    2: { max: 3, current: 1 },
+    3: { max: 3, current: 2 },
+    4: { max: 3, current: 1 },
+    5: { max: 3, current: 1 },
+    6: { max: 2, current: 1 },
+    7: { max: 2, current: 1 },
+    8: { max: 1, current: 1 },
+    9: { max: 1, current: 1 },
   },
 };
 

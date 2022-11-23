@@ -17,6 +17,9 @@ export const initialClassState = {
         ],
         amount: 2,
       },
+      spellSlots: {
+        1: { max: 2, current: 2 },
+      },
     },
   },
 };
